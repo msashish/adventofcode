@@ -5,7 +5,7 @@ import sys
 class Day1Puzzle:
 
     @staticmethod
-    def calculate_fuel(masses):
+    def calculate_fuel(masses): # for day1
         fuel = 0
         for mass in masses:
             mass_fuel = mass.strip('\n').strip('')
