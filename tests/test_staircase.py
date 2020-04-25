@@ -5,6 +5,7 @@ from staircase import StairCase
 class TestStairCase(unittest.TestCase):
 
     def test_recursive_simple(self):
+        print('running test_recursive_simple')
         s = StairCase()
         self.assertEqual(s.simple_recursive(1, [1, 2]), 1)
         self.assertEqual(s.simple_recursive(1, [2]), 0)
@@ -14,11 +15,13 @@ class TestStairCase(unittest.TestCase):
         self.assertEqual(s.simple_recursive(4, [1, 2]), 5)
 
     def test_recursive_large(self):
+        print('running test_recursive_large')
         s = StairCase()
         self.assertEqual(s.simple_recursive(5, [1, 3, 5]), 5)
         self.assertEqual(s.simple_recursive(5, [3, 5]), 1)
 
     def test_dp_bottom_up(self):
+        print('running test_dp_bottom_up')
         s = StairCase()
         self.assertEqual(s.find_using_dp(1, [1, 2]), 1)
         self.assertEqual(s.find_using_dp(1, [2]), 0)
