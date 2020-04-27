@@ -13,7 +13,7 @@ class ArrayAddition:
             else:
                 output_list[pos] = temp
                 carry_over = 0
-        if carry_over == 1:
-            output_list = [1] + output_list
+        if carry_over != 0:
+            output_list = [carry_over] + output_list
         print(f"Input array = {input_list} Output array = {output_list}")
         return output_list
